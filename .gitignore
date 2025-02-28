@@ -3,3 +3,4 @@
 /node_modules
 .cache.sqlite
 /__pycache__
+/routes/__pycache__
