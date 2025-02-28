@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load dataset
-data = pd.read_csv("./data/Crop_recommendation_real.csv")
+data = pd.read_csv("../data/Crop_recommendation_real.csv")
 data.rename(columns={"N": "Nitrogen", "P": "Phosphorus", "K": "Potassium", "ph": "pH_Level", "rainfall": "Rainfall", "temperature": "Temperature", "humidity": "Humidity", "label": "Best_Crop"}, inplace=True)
 
 # Encode target variable

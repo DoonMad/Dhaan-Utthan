@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-data = pd.read_csv("new_crop_data.csv")
+data = pd.read_csv("../new_crop_data.csv")
 data.rename(columns={"N": "Nitrogen", "P": "Phosphorus", "K": "Potassium", "ph": "pH_Level", "rainfall": "Rainfall", "temperature": "Temperature", "humidity": "Humidity", "label": "Best_Crop"}, inplace=True)
 
 # Check class distribution
