@@ -1,0 +1,222 @@
+{
+    "Rice": {
+      "seasons": ["Monsoon"],
+      "soil_type": "Clayey, loamy soil",
+      "min_yield": 3.5,
+      "max_yield": 6.5,
+      "min_price": 20,
+      "max_price": 40,
+      "fertilizer": "Nitrogen, Phosphorus, Potassium (NPK)",
+      "description": "Rice is a staple food crop that requires abundant water and warm temperatures. It is typically grown in flooded fields."
+    },
+    "Maize": {
+      "seasons": ["Summer", "Monsoon"],
+      "soil_type": "Well-drained loamy soil",
+      "min_yield": 2.5,
+      "max_yield": 5.5,
+      "min_price": 15,
+      "max_price": 35,
+      "fertilizer": "Urea, DAP, Potash",
+      "description": "Maize is a widely grown cereal crop used for food, fodder, and industrial purposes."
+    },
+    "Chickpea": {
+      "seasons": ["Winter"],
+      "soil_type": "Sandy loam, well-drained",
+      "min_yield": 1.8,
+      "max_yield": 3.2,
+      "min_price": 50,
+      "max_price": 70,
+      "fertilizer": "Phosphorus, Potassium, Micronutrients",
+      "description": "Chickpea is a high-protein legume commonly used in Indian cuisine."
+    },
+    "Kidneybeans": {
+      "seasons": ["Winter"],
+      "soil_type": "Loamy, well-drained",
+      "min_yield": 1.5,
+      "max_yield": 2.8,
+      "min_price": 60,
+      "max_price": 90,
+      "fertilizer": "Organic manure, NPK mix",
+      "description": "Kidneybeans are a popular legume rich in protein and fiber, grown mainly in colder climates."
+    },
+    "Pigeonpeas": {
+      "seasons": ["Monsoon"],
+      "soil_type": "Sandy loam, well-drained",
+      "min_yield": 1.2,
+      "max_yield": 3.5,
+      "min_price": 45,
+      "max_price": 70,
+      "fertilizer": "Phosphorus-rich fertilizers",
+      "description": "Pigeonpea is a drought-resistant legume crop widely used in Indian dal."
+    },
+    "Mothbeans": {
+      "seasons": ["Monsoon"],
+      "soil_type": "Sandy soil, dry regions",
+      "min_yield": 0.8,
+      "max_yield": 2.5,
+      "min_price": 40,
+      "max_price": 65,
+      "fertilizer": "Potassium, Micronutrients",
+      "description": "Mothbeans are a drought-resistant legume grown in arid regions."
+    },
+    "Mungbean": {
+      "seasons": ["Monsoon", "Summer"],
+      "soil_type": "Loamy, well-drained",
+      "min_yield": 1.2,
+      "max_yield": 2.8,
+      "min_price": 50,
+      "max_price": 80,
+      "fertilizer": "Phosphorus, Potassium",
+      "description": "Mungbean is a protein-rich pulse used in various Indian dishes."
+    },
+    "Blackgram": {
+      "seasons": ["Monsoon"],
+      "soil_type": "Clayey loam, well-drained",
+      "min_yield": 1.3,
+      "max_yield": 2.7,
+      "min_price": 55,
+      "max_price": 85,
+      "fertilizer": "Potassium, Sulfur",
+      "description": "Blackgram is a nutritious pulse used in making dal and other Indian dishes."
+    },
+    "Lentil": {
+      "seasons": ["Winter"],
+      "soil_type": "Loamy soil, cool climate",
+      "min_yield": 1.5,
+      "max_yield": 3.0,
+      "min_price": 60,
+      "max_price": 90,
+      "fertilizer": "Nitrogen, Phosphorus",
+      "description": "Lentils are a staple legume in Indian diets, rich in protein and fiber."
+    },
+    "Pomegranate": {
+      "seasons": ["Summer", "Winter"],
+      "soil_type": "Well-drained loamy soil",
+      "min_yield": 8,
+      "max_yield": 12,
+      "min_price": 100,
+      "max_price": 200,
+      "fertilizer": "Potassium, Phosphorus, Organic Manure",
+      "description": "Pomegranate is a fruit crop known for its health benefits and high market value."
+    },
+    "Banana": {
+      "seasons": ["Monsoon", "Winter"],
+      "soil_type": "Fertile loamy soil",
+      "min_yield": 30,
+      "max_yield": 60,
+      "min_price": 10,
+      "max_price": 25,
+      "fertilizer": "Nitrogen, Phosphorus, Potassium",
+      "description": "Banana is a tropical fruit grown widely for its high yield and nutritional benefits."
+    },
+    "Mango": {
+      "seasons": ["Summer"],
+      "soil_type": "Well-drained loamy soil",
+      "min_yield": 10,
+      "max_yield": 20,
+      "min_price": 80,
+      "max_price": 150,
+      "fertilizer": "Organic manure, NPK mix",
+      "description": "Mango is a tropical fruit known as the 'King of Fruits' with high demand worldwide."
+    },
+    "Grapes": {
+      "seasons": ["Winter"],
+      "soil_type": "Well-drained sandy loam",
+      "min_yield": 20,
+      "max_yield": 40,
+      "min_price": 60,
+      "max_price": 120,
+      "fertilizer": "Nitrogen, Potassium, Phosphorus",
+      "description": "Grapes are widely cultivated for fresh consumption, wine, and juice production."
+    },
+    "Watermelon": {
+      "seasons": ["Summer"],
+      "soil_type": "Sandy loam, well-drained",
+      "min_yield": 15,
+      "max_yield": 30,
+      "min_price": 20,
+      "max_price": 50,
+      "fertilizer": "Potassium, Phosphorus",
+      "description": "Watermelon is a refreshing summer fruit known for its high water content."
+    },
+    "Muskmelon": {
+      "seasons": ["Summer"],
+      "soil_type": "Sandy loam, well-drained",
+      "min_yield": 10,
+      "max_yield": 25,
+      "min_price": 25,
+      "max_price": 60,
+      "fertilizer": "Potassium, Nitrogen",
+      "description": "Muskmelon is a sweet, juicy fruit cultivated in warm climates."
+    },
+    "Apple": {
+      "seasons": ["Winter"],
+      "soil_type": "Loamy, well-drained soil",
+      "min_yield": 8,
+      "max_yield": 15,
+      "min_price": 100,
+      "max_price": 250,
+      "fertilizer": "Potassium, Organic Manure",
+      "description": "Apple is a cold-climate fruit rich in vitamins and widely consumed worldwide."
+    },
+    "Orange": {
+      "seasons": ["Winter", "Summer"],
+      "soil_type": "Well-drained sandy loam",
+      "min_yield": 10,
+      "max_yield": 25,
+      "min_price": 50,
+      "max_price": 120,
+      "fertilizer": "Nitrogen, Phosphorus, Potassium",
+      "description": "Orange is a citrus fruit rich in Vitamin C, widely cultivated for fresh consumption and juice production."
+    },
+    "Papaya": {
+      "seasons": ["Summer", "Monsoon"],
+      "soil_type": "Well-drained loamy soil",
+      "min_yield": 20,
+      "max_yield": 40,
+      "min_price": 30,
+      "max_price": 80,
+      "fertilizer": "Organic manure, NPK mix",
+      "description": "Papaya is a tropical fruit known for its digestive benefits and high nutritional value."
+    },
+    "Coconut": {
+      "seasons": ["All seasons"],
+      "soil_type": "Sandy loam, well-drained",
+      "min_yield": 50,
+      "max_yield": 100,
+      "min_price": 15,
+      "max_price": 40,
+      "fertilizer": "Potassium, Phosphorus, Organic Manure",
+      "description": "Coconut is a versatile crop used for its water, oil, and fiber, thriving in coastal regions."
+    },
+    "Cotton": {
+      "seasons": ["Monsoon"],
+      "soil_type": "Black soil, well-drained",
+      "min_yield": 2.5,
+      "max_yield": 4.5,
+      "min_price": 60,
+      "max_price": 120,
+      "fertilizer": "Nitrogen, Phosphorus, Potassium",
+      "description": "Cotton is a major cash crop used in the textile industry for fiber production."
+    },
+    "Jute": {
+      "seasons": ["Monsoon"],
+      "soil_type": "Alluvial soil, high moisture",
+      "min_yield": 25,
+      "max_yield": 40,
+      "min_price": 20,
+      "max_price": 50,
+      "fertilizer": "Nitrogen, Phosphorus, Organic Manure",
+      "description": "Jute is a fiber crop used for making eco-friendly bags, ropes, and textiles."
+    },
+    "Coffee": {
+      "seasons": ["Winter"],
+      "soil_type": "Well-drained volcanic soil",
+      "min_yield": 2,
+      "max_yield": 4,
+      "min_price": 150,
+      "max_price": 300,
+      "fertilizer": "Nitrogen, Potassium, Organic Manure",
+      "description": "Coffee is a high-value cash crop grown in hilly regions, mainly for beverage production."
+    }
+  }
