@@ -17,6 +17,9 @@ const App = () => {
     setInputs({ ...inputs, [e.target.name]: parseFloat(e.target.value) });
   };
 
+  // Get Image Path for Crops
+  const getImagePath = (cropName) => `/crop_images/${cropName.toLowerCase().replace(/\s/g, "")}.jpg`;
+
   // Fetch Weather Data
   const fetchWeather = async () => {
     try {
@@ -49,11 +52,11 @@ const App = () => {
       <input type="text" value={district} onChange={(e) => setDistrict(e.target.value)} />
 
       {/* Input Fields */}
-      <h3>Enter Soil and Climate Conditions:</h3>
-      <input type="number" name="N" value={inputs.N} onChange={handleChange} placeholder="Nitrogen (mg/kg)" />
-      <input type="number" name="P" value={inputs.P} onChange={handleChange} placeholder="Phosphorus (mg/kg)" />
-      <input type="number" name="K" value={inputs.K} onChange={handleChange} placeholder="Potassium (mg/kg)" />
-      <input type="number" name="ph" value={inputs.ph} onChange={handleChange} placeholder="pH Level" />
+      <h3>Enter Soil Conditions:</h3>
+      <p>Nitrogen: <input type="number" name="N" value={inputs.N} onChange={handleChange} placeholder="Nitrogen (mg/kg)" /></p>
+      <p>Phosphorus: <input type="number" name="P" value={inputs.P} onChange={handleChange} placeholder="Phosphorus (mg/kg)" /></p>
+      <p>Potassium: <input type="number" name="K" value={inputs.K} onChange={handleChange} placeholder="Potassium (mg/kg)" /></p>
+      <p>pH: <input type="number" name="ph" value={inputs.ph} onChange={handleChange} placeholder="pH Level" /></p>
 
       {/* Action Buttons */}
       <button onClick={fetchWeather}>🌦 Get Weather Data</button>
@@ -80,21 +83,24 @@ const App = () => {
           <h2>🌱 Recommended Crops</h2>
           {Object.entries(cropPredictions).map(([season, crops]) => (
             <div key={season}>
-              <h3>📅 {season} Season</h3>
-              {crops.length > 0 ? (
-                crops.map((crop, index) => (
-                  <div key={index} className="card">
-                    <h4>🌾 {crop.name}</h4>
-                    <p><strong>Soil Type:</strong> {crop.soil_type}</p>
-                    <p><strong>Yield:</strong> {crop.min_yield} - {crop.max_yield} tons</p>
-                    <p><strong>Price:</strong> ₹{crop.min_price} - ₹{crop.max_price} per kg</p>
-                    <p><strong>Fertilizer:</strong> {crop.fertilizer}</p>
-                    <p>{crop.description}</p>
-                  </div>
-                ))
-              ) : (
-                <p>No suitable crops found for this season.</p>
-              )}
+              <h3 className="season-title">📅 {season} Season</h3>
+              <div className="crop-grid">
+                {crops.length > 0 ? (
+                  crops.map((crop, index) => (
+                    <div key={index} className="card">
+                      <img src={getImagePath(crop.name)} alt={crop.name} className="crop-image" />
+                      <h4>🌾 {crop.name}</h4>
+                      <p><strong>Soil Type:</strong> {crop.soil_type}</p>
+                      <p><strong>Yield:</strong> {crop.min_yield} - {crop.max_yield} tons</p>
+                      <p><strong>Price:</strong> ₹{crop.min_price} - ₹{crop.max_price} per kg</p>
+                      <p><strong>Fertilizer:</strong> {crop.fertilizer}</p>
+                      <p>{crop.description}</p>
+                    </div>
+                  ))
+                ) : (
+                  <p>No suitable crops found for this season.</p>
+                )}
+              </div>
             </div>
           ))}
         </div>
