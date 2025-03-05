@@ -7,9 +7,13 @@ from imblearn.over_sampling import SMOTE
 from xgboost import XGBClassifier
 from xgboost import XGBClassifier, plot_importance
 import matplotlib.pyplot as plt
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(current_dir, "..", "data", "Crop_recommendation_real.csv")
 
 # Load your dataset
-data = pd.read_csv("./data/Crop_recommendation_real.csv")
+data = pd.read_csv(file_path)
 
 # Fix column names
 data.columns = data.columns.str.strip()  # Remove spaces

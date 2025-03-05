@@ -6,9 +6,13 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report, accuracy_score
 from imblearn.over_sampling import SMOTE
 from xgboost import XGBClassifier, plot_importance
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(current_dir, "..", "data", "Crop_recommendation_real.csv")
 
 # Load your dataset
-data = pd.read_csv("./data/Crop_recommendation_real.csv")
+data = pd.read_csv(file_path)
 
 # Handle missing values (replace with median)
 data.fillna(data.median(), inplace=True)

@@ -42,15 +42,28 @@ button:hover {
 
 /* Input Fields */
 input {
-  width: 80%;
+  width: 70%;
   padding: 8px;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+.input-para{
+  width: 80%;
+  margin: auto;
+}
+
 /* Weather & Crop Section */
 .weather-section, .crop-section {
+  margin-top: 20px;
+}
+
+.weather-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
   margin-top: 20px;
 }
 

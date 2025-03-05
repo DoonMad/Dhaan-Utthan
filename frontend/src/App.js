@@ -53,10 +53,10 @@ const App = () => {
 
       {/* Input Fields */}
       <h3>Enter Soil Conditions:</h3>
-      <p>Nitrogen: <input type="number" name="N" value={inputs.N} onChange={handleChange} placeholder="Nitrogen (mg/kg)" /></p>
-      <p>Phosphorus: <input type="number" name="P" value={inputs.P} onChange={handleChange} placeholder="Phosphorus (mg/kg)" /></p>
-      <p>Potassium: <input type="number" name="K" value={inputs.K} onChange={handleChange} placeholder="Potassium (mg/kg)" /></p>
-      <p>pH: <input type="number" name="ph" value={inputs.ph} onChange={handleChange} placeholder="pH Level" /></p>
+      <p class="input-para">Nitrogen (mg/kg): <input type="number" name="N" value={inputs.N} onChange={handleChange} placeholder="Nitrogen (mg/kg)" /></p>
+      <p class="input-para">Phosphorus (mg/kg): <input type="number" name="P" value={inputs.P} onChange={handleChange} placeholder="Phosphorus (mg/kg)" /></p>
+      <p class="input-para">Potassium (mg/kg): <input type="number" name="K" value={inputs.K} onChange={handleChange} placeholder="Potassium (mg/kg)" /></p>
+      <p class="input-para">pH: <input type="number" name="ph" value={inputs.ph} onChange={handleChange} placeholder="pH Level" /></p>
 
       {/* Action Buttons */}
       <button onClick={fetchWeather}>🌦 Get Weather Data</button>
@@ -66,6 +66,7 @@ const App = () => {
       {weatherData && (
         <div className="weather-section">
           <h2>🌦 Seasonal Weather Data</h2>
+          <div className="weather-grid">
           {Object.entries(weatherData).map(([season, values]) => (
             <div key={season} className="card">
               <h3>📅 {season} Season</h3>
@@ -74,6 +75,7 @@ const App = () => {
               <p>🌧 Rainfall: {values.rainfall} mm</p>
             </div>
           ))}
+          </div>
         </div>
       )}
 
