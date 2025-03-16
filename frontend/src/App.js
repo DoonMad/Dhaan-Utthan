@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>🌾 Crop Prediction App</h1>
+      <h1>🌾 Dhaan-Utthan</h1>
 
       {/* District Input */}
       <label>Enter District: </label>
